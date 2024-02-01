@@ -1,11 +1,10 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import AppText from "./app/components/AppText/AppText.ios";
-import AppButton from "./app/components/AppButton";
-import WelcomeScreen from "./app/screens/WelcomeScreen";
+
+import Card from "./app/components/Card";
+import LIstingDetailsScreen from "./app/components/LIstingDetailsScreen";
 
 export default function App() {
-  return <WelcomeScreen />;
+  return <LIstingDetailsScreen />;
 }
 
 const styles = StyleSheet.create({
