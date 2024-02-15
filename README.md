@@ -1,5 +1,6 @@
 # first-react-native-app
 
+- Node: v16.20.2
 - Expo: v49.0.18
 - React: v18.2.0
 - React Native SDK: v0.27.6
