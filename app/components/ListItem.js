@@ -28,9 +28,11 @@ const styles = StyleSheet.create({
   },
   subTitle: {
     color: colors.medium,
+    fontSize: 13,
+    fontWeight: "700",
   },
   title: {
-    fontWeight: "500",
+    fontWeight: "600",
   },
 });
 
