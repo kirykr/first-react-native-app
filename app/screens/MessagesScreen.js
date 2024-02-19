@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { FlatList, StyleSheet, View } from "react-native";
-import ListItem from "../components/ListItem";
+import ListItem from "../components/lists/ListItem";
 import Screen from "../components/Screen";
-import ListItemSeparator from "../components/ListItemSeparator";
-import ListItemDeleteAction from "../components/ListItemDeleteAction";
+import ListItemSeparator from "../components/lists/ListItemSeparator";
+import ListItemDeleteAction from "../components/lists/ListItemDeleteAction";
 const initialMessages = [
   {
     id: 1,
     title: "T1",
-    description: "D1",
+    description:
+      "Aliqua nulla amet labore consectetur aliquip tempor incididunt Lorem reprehenderit. Dolor deserunt anim Lorem esse aliqua veniam cillum ut ipsum proident in pariatur. Mollit aliquip fugiat mollit cillum aliqua labore deserunt ut. Duis irure sint est ipsum sunt exercitation. Aliqua veniam eiusmod amet ex mollit officia ullamco elit fugiat sit duis aliquip aute.",
     image: require("../assets/boy-with-shade.png"),
   },
   {
@@ -30,7 +31,6 @@ function MessagesScreen(props) {
   const [refreshing, setRefreshing] = useState(false);
 
   const handleDelete = (message) => {
-    console.log(message.id);
     setMessages(messages.filter((m) => m.id !== message.id));
   };
 

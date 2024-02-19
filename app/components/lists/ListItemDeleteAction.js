@@ -1,8 +1,8 @@
 import React from "react";
-import { View, StyleSheet, TouchableWithoutFeedback } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-
+import { View, StyleSheet } from "react-native";
 import colors from "../../config/colors";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 
 function ListItemDeleteAction({ onPress }) {
   return (
@@ -17,14 +17,14 @@ function ListItemDeleteAction({ onPress }) {
     </TouchableWithoutFeedback>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.danger,
-    width: 70,
+    width: 75,
     justifyContent: "center",
     alignItems: "center",
+    flexDirection: "column",
+    height: "100%",
   },
 });
-
 export default ListItemDeleteAction;
